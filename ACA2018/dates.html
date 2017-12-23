@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>日程</title>
+    <link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!--web-font-->
+    <link href='css/marvel.css' rel='stylesheet' type='text/css'>
+    <link href='css/opensans.css' rel='stylesheet' type='text/css'>
+    <!--//web-font-->
+    <!-- Custom Theme files -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="ACA 2018" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/find.js"></script>
+    <!--//end-smoth-scrolling-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!--side-bar-->
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="logo">
+                <div class="acm_logo_test"></div>
+            </div>
+            <div class="top-nav">
+                <span class="menu-icon"><img src="images/menu-icon.png" alt="" /></span>
+                <div class="nav1">
+                    <ul id="newnav" class=" nav nav-sidebar">
+                        <li>
+                            <a href="index.html">首页 </a>
+                        </li>
+                        <li>
+                            <a href="about.html">大会简介</a>
+                        </li>
+                        <li>
+                            <a href="organzing.html">大会组织机构</a>
+                        </li>
+                        <li>
+                            <a href="sponsors.html">合作伙伴</a>
+                        </li>
+                        <li>
+                            <a class="tagClick" style="margin-left:18px;cursor: pointer">征文与注册
+                                <img class="more" src="images/more_1.png" />
+                            </a>
+                            <ul class="nav" style="display: none">
+                                <li>
+                                    <a href="cfp.html">征文通知</a>
+                                </li>
+                                <li>
+                                    <a href="papersub.html">论文提交</a>
+                                </li>
+                                <li>
+                                    <a href="registration.html">大会注册</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a class="tagClick" style="margin-left:18px;cursor: pointer">大会活动
+                                <img class="more" src="images/more.png" />
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="dates.html">日程</a>
+                                </li>
+                                <li>
+                                    <a href="report.html">特邀报告</a>
+                                </li>
+                                <li>
+                                    <a href="competition.html">大学生创新竞赛</a>
+                                </li>
+                                <li>
+                                    <a href="youngreport.html">青年学者论坛</a>
+                                </li>
+                                <li>
+                                    <a href="ctpes.html">Contributed Talk, Poster & Exhibition Session</a>
+                                </li>
+                                <li>
+                                    <a href="teachdiscuss.html">教学论坛</a>
+                                </li>
+                                <li>
+                                    <a href="coopdiscuss.html">工业界需求论坛</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="tagClick" style="margin-left:18px;cursor: pointer">参会指南
+                                <img class="more" src="images/more_1.png" />
+                            </a>
+                            <ul class="nav" style="display: none">
+                                <li>
+                                    <a href="hotelinfo.html">住宿指南</a>
+                                </li>
+                                <li>
+                                    <a href="trafficinfo.html">交通指南</a>
+                                </li>
+                                <li>
+                                    <a href="travelinfo.html">旅游指南</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="overview.html">历届回顾</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <script type="text/javascript" src="js/menushow.js"></script>
+
+
+            </div>
+            <div class="clearfix"> </div>
+            <p>Copyright &copy; <span class="aca_year"></span> ACA <br>All rights reserved.</p>
+        </div>
+        <!--//side-bar-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main about-main" style="padding-top: 0px">
+            <div class="about-slid">
+                <div class="abt-slid-text">
+                    <h2><span class="aca_year"></span>年全国计算机体系结构学术年会</h2>
+                </div>
+            </div>
+            <div class="about">
+                <h3 id="date" style="font-family: '微软雅黑', sans-serif">日程安排—8月22日</h3>
+                <div class="col-md-4 about-grids" style="width:80%;margin-left: 10%;text-align: center">
+                    <button id="btn_822" style="display: none"><a>点击查看8月22日日程安排</a></button>
+                    <button id="btn_823"><a>点击查看8月23日日程安排</a></button>
+                </div>
+                <div id="div_822" class="col-md-4 about-grids" style="display: block;width:100%;text-align: left;margin-top: 2em">
+                    <h4>上午</h4>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5;">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>8:30--8:40</td>
+                            <td>开幕式</td>
+                            <td>相关领导</td>
+                            <td>窦勇 (专委会主任)</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        <!---->
+                        <!--<tr style="border-bottom:1px solid gainsboro;">-->
+                            <!--<td>8:30&#45;&#45;8:36</td>-->
+                            <!--<td>开幕式，大会主席致辞</td>-->
+                            <!--<td>廖湘科、孙凝晖</td>-->
+                            <!--<td>窦勇</td>-->
+                            <!--<td>多功能厅</td>-->
+                        <!--</tr>-->
+                        <!--<tr style="border-bottom:1px solid gainsboro;">-->
+                            <!--<td>8:36&#45;&#45;8:42</td>-->
+                            <!--<td>CCF理事长、秘书长致辞</td>-->
+                            <!--<td>高文、杜子德</td>-->
+                            <!--<td>窦勇</td>-->
+                            <!--<td>多功能厅</td>-->
+                        <!--</tr>-->
+                        <!--<tr style="border-bottom:1px solid gainsboro;">-->
+                            <!--<td>8:42&#45;&#45;8:45</td>-->
+                            <!--<td>专委会主任致辞</td>-->
+                            <!--<td>窦勇</td>-->
+                            <!--<td>窦勇</td>-->
+                            <!--<td>多功能厅</td>-->
+                        <!--</tr>-->
+                        <!--<tr style="border-bottom:1px solid gainsboro;">-->
+                            <!--<td>8:45&#45;&#45;8:50</td>-->
+                            <!--<td>承办方致辞</td>-->
+                            <!--<td>哈尔滨工业大学相关领导、武成岗</td>-->
+                            <!--<td>窦勇</td>-->
+                            <!--<td>多功能厅</td>-->
+                        <!--</tr>-->
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>8:40--9:30</td>
+                            <td>特邀报告1：Parallel Computing for Analyzing Functional Interactions of the Human Brain</td>
+                            <td>李凯（普林斯顿大学教授、美国工程院院士）</td>
+                            <td>窦勇</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>9:30--10:20</td>
+                            <td>特邀报告2: The Little Engine That Could</td>
+                            <td>Randy Wang（中科院计算所 研究员）</td>
+                            <td>窦勇</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>10:20--10:50</td>
+                            <td>合影+茶歇</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>10:50--11:15</td>
+                            <td>特邀企业报告1：飞腾系列微处理器互连结构</td>
+                            <td>周宏伟 (飞腾系列微处理器研发资深架构师)</td>
+                            <td>武成岗（专委会副主任）</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>11:15--11:30</td>
+                            <td>特邀企业报告2：龙芯自主IT产业生态建设</td>
+                            <td>张戈（龙芯中科 教授级高工）</td>
+                            <td>武成岗</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>11:30--12:00</td>
+                            <td>大学生竞赛颁奖及赞助商Xilinx致辞</td>
+                            <td>颁奖嘉宾：陆佳华(Xilinx学术合作亚太区经理)、廖湘科（国防科大 院士)、孙凝晖（中科院计算所所长、计算机学会副理事长）、漆锋滨（教授级高工）、窦勇（专委会主任）等</td>
+                            <td>周宽久、梁云 (大连理工、北京大学教授)</td>
+                            <td>多功能厅</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><h4>中午</h4>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>12:00--13:20</td>
+                            <td>午餐</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><h4>下午</h4>
+                    <!--<h5><strong>青年学者论坛</strong></h5>-->
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <!--绿色计算-->
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>13:20--15:00</td>
+                            <td><strong>绿色计算</strong></td>
+                            <td></td>
+                            <td>高天寒 (东北大学副教授)</td>
+                            <td>C会议室</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告1：XOS: 一种面向智能移动设备的高能效QoE优化异构多核调度算法</td>
+                            <td>宫晓利（南开大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告2：基于统计量的存储系统磁盘功率建模方法研究</td>
+                            <td>孙鉴（西北工业大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告3：时间约束的异构分布式系统工作流能耗优化算法</td>
+                            <td>林亚平（湖南大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告4：基于可重构微服务器的高能效指纹比对方法</td>
+                            <td>钱磊（数学工程与先进计算国家重点实验室）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告5：PLUFS: 一种开销敏感的周期任务在线多处理器节能实时调度算法</td>
+                            <td>张冬松（镇江船艇学院）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告6：实时系统温度功耗管理的优化方法研究</td>
+                            <td>李甜甜（东北大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告7：基于SMART技术的片上网络低功耗策略P-SMART</td>
+                            <td>李彬（国防科学技术大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告8：分布式集装箱数据中心的绿色层次化管理</td>
+                            <td>李超（上海交通大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告9：基于DSP芯片的高能效FFT加速器结构</td>
+                            <td>雷元武（国防科技大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:00--15:20</td>
+                            <td>茶歇</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:20--17:00</td>
+                            <td><strong>Contributed Talk</strong></td>
+                            <td></td>
+                            <td>张功萱 (专委会副主任)</td>
+                            <td>C会议室</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告1：RRAM-based Neural Computing System</td>
+                            <td>夏立雪（清华大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告2：弹性数据处理：虚拟化与内存计算</td>
+                            <td>翁楚良（华东师范大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告3：Study on Reliable Racetrack Memory: From Circuit to Architecture</td>
+                            <td>孙广宇 （北京大学 教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告4：Enabling Coordinated Register Allocation and Thread-level Parallelism Optimization for GPUs</td>
+                            <td>梁  云（北京大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告5：双空间存储器概述</td>
+                            <td>金  翊 （上海大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--设计自动化论坛-->
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>17:00--18:30</td>
+                            <td><strong>设计自动化论坛</strong></td>
+                            <td></td>
+                            <td>韩银和 (中科院计算所研究员)</td>
+                            <td>C会议室</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>机器人应用加速和自动化设计（EDA）工具</td>
+                            <td>韩银和（中科院计算所研究员）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>基于 FPGA 的卷积神经网络加速器设计探索</td>
+                            <td>孙广宇（北京大学教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>面向FPGA加速器的性能分析技术</td>
+                            <td>梁云（北京大学教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>近似计算的应用与展望</td>
+                            <td>徐强（香港中文大学教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+                    <br><br>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>13:20--14:20</td>
+                            <td><strong>青年学者论坛</strong></td>
+                            <td></td>
+                            <td>王兴伟 (专委会副主任)</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告1：大数据存储系统中近似去重的体系结构</td>
+                            <td>华宇（华中科技大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告2：三值光学计算机</td>
+                            <td>欧阳山（上海大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告3：面向闪存的文件系统设计</td>
+                            <td>陆游游（清华大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>14:20--15:00</td>
+                            <td><strong>教学论坛</strong></td>
+                            <td></td>
+                            <td>袁春风 (南京大学教授)</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>概述</td>
+                            <td>汪东升（清华大学 教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:00--15:20</td>
+                            <td>茶歇</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:20--18:30</td>
+                            <td><strong>教学论坛</strong></td>
+                            <td></td>
+                            <td>汪东升 (专委会副主任)</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:20--16:10</td>
+                            <td>数据的表示和运算</td>
+                            <td>袁春风（南京大学 教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>16:10--17:00</td>
+                            <td>指令系统</td>
+                            <td>王伟（合肥工业大学 副教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>17:00--17:45</td>
+                            <td>数据通路和控制器</td>
+                            <td>陈微（国防科技大学 副教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>17:45--18:30</td>
+                            <td>指令流水线和指令级并行技术</td>
+                            <td>姜晓红（浙江大学 教授）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br><h4>晚上</h4>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>18:30--20:00</td>
+                            <td>晚餐</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>20:00--22:00</td>
+                            <td>专委工作会议</td>
+                            <td></td>
+                            <td>窦勇 (专委会主任)</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="div_823" class="col-md-4 about-grids" style="display: none;width:100%;text-align: left;margin-top: 2em">
+                    <h4>上午</h4>
+                    <table width="100%">
+                        <tbody>
+                            <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                                <th width="10%">时间</th>
+                                <th width="35%">活动</th>
+                                <th width="20%">发言人</th>
+                                <th width="15%">主持人</th>
+                                <th width="10%">地点</th>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td>8:30--9:10</td>
+                                <td>特邀报告3：“神威•太湖之光”超级计算机系统</td>
+                                <td>漆锋滨 (国家并行计算机工程技术研究中心常务副总设计师)</td>
+                                <td>武成岗 (专委会副主任)</td>
+                                <td>多功能厅</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td>9:10--10:00</td>
+                                <td>特邀报告4：Customizable Computing — From Single-chip to Datacenters</td>
+                                <td>Jingsheng Cong (UCLA教授)</td>
+                                <td>武成岗</td>
+                                <td>多功能厅</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td>10:00--10:20</td>
+                                <td>茶歇</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td>10:20--11:10</td>
+                                <td>特邀报告5：Technology-driven and Application-driven Architecture Innovation: Past, Present, and Future.</td>
+                                <td>Yuan Xie (UCSB教授)</td>
+                                <td>武成岗</td>
+                                <td>多功能厅</td>
+                            </tr>
+
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td>11:10--12:10</td>
+                                <td><strong>工业界需求论坛</strong></td>
+                                <td></td>
+                                <td>陆佳华 (赛灵思大学计划副总)</td>
+                                <td>多功能厅</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td></td>
+                                <td>报告1：软件定义、硬件优化 -  Xilinx全可编程技术的产学研合作需求</td>
+                                <td>唐杰 （Xilinx)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td></td>
+                                <td>报告2：深度学习领域定制计算的产学研协同</td>
+                                <td>徐宁仪（微软）</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td></td>
+                                <td>报告3：专用图像识别处理单元的设计挑战</td>
+                                <td>杨铭（地平线）</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td></td>
+                                <td>报告4: Cambricon: An Instruction Set Architecture for Neural Networks</td>
+                                <td>杜子东（寒武纪）</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid gainsboro;">
+                                <td></td>
+                                <td>讨论</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><h4>中午</h4>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>12:10--13:30</td>
+                            <td>午餐</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><h4>下午</h4>
+                    <h5><strong>Contributed Talk</strong></h5>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>13:30--15:10</td>
+                            <td><strong>Contributed Talk</strong></td>
+                            <td></td>
+                            <td>陈文智 (浙江大学教授)</td>
+                            <td>C会议室</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告1：降低单级存储系统的同步开销</td>
+                            <td>徐远超（首都师范大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告2：PARD: 一种按需分配的资源可编程体系结构</td>
+                            <td>余子濠（中国科学院计算技术研究所）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告3：一种基于种族分类进化的QoS异构组播路由机制</td>
+                            <td>卢鹏飞（东北大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告4：面向云联网的云服务协商机制</td>
+                            <td>杨晚林（东北大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告5：交通安防大数据平台</td>
+                            <td>华幸成（浙江大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:10--15:30</td>
+                            <td>茶歇</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:30--17:10</td>
+                            <td><strong>Contributed Talk</strong></td>
+                            <td></td>
+                            <td>李炼 (中科院计算所研究员)</td>
+                            <td>C会议室</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告1：GRT: 高性能可定制无线网络底层软硬件开放平台</td>
+                            <td>王  韬（北京大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告2：垃圾回收感知的闪存存储系统研究</td>
+                            <td>毛  波（厦门大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告3：嵌入式系统可信虚拟化技术的研究与应用</td>
+                            <td>张伶俐（南京理工大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告4：集成I/O硬件压缩加速器的Hadoop系统框架</td>
+                            <td>雷力（浙江大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>报告5：可编程双粒子玻色-费米量子模拟</td>
+                            <td>吴俊杰（国防科学技术大学）</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td></td>
+                            <td>讨论、交流</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>17:10--18:30</td>
+                            <td>Poster</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br><h5><strong>教学论坛</strong></h5>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>13:30--14:20</td>
+                            <td>存储器层次结构</td>
+                            <td>沈立（国防科技大学 副教授）</td>
+                            <td>袁春风 (南京大学教授)</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>14:20--15:10</td>
+                            <td>系统互连与输入输出子系统</td>
+                            <td>杨全胜（东南大学 副教授）</td>
+                            <td>袁春风</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:10--15:30</td>
+                            <td>茶歇</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>15:30--16:20</td>
+                            <td>并行处理技术</td>
+                            <td>安虹（中国科技大学 教授）</td>
+                            <td>汪东升 (专委会副主任)</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>16:20--16:50</td>
+                            <td>龙芯中科的实验平台</td>
+                            <td>张戈（龙芯公司 高级工程师）</td>
+                            <td>汪东升</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>16:50--17:10</td>
+                            <td>以远程硬件(FPGA)实验平台提升计算机系统能力建设</td>
+                            <td>柴志雷（江南大学）</td>
+                            <td>汪东升</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>17:10--18:30</td>
+                            <td>交流、分享和研讨（Penel）</td>
+                            <td>主席团：袁春风、王伟、沈立、陈文智、陈微、杨全胜、安虹</td>
+                            <td>汪东升</td>
+                            <td>多功能厅B</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br><h4>晚上</h4>
+                    <table width="100%">
+                        <tbody>
+                        <tr style="font-size: 16px;height: 40px;line-height: 20px;border-bottom:1px solid #99abd5">
+                            <th width="10%">时间</th>
+                            <th width="35%">活动</th>
+                            <th width="20%">发言人</th>
+                            <th width="15%">主持人</th>
+                            <th width="10%">地点</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid gainsboro;">
+                            <td>18:30--20:30</td>
+                            <td>晚宴</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"> </script>
+    <script src="js/aca.js"> </script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/dates.js"></script>
+</body>
+</html>

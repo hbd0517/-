@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1786fe89-07e6-47ab-89fd-a57c34d0793d" name="eclipse-wt" url="https://github.com/hbd0517/wwttnew">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="52bc6d7d-0853-4471-a175-e7018f2e57a1" name="github" url="https://github.com/hbd0517/ACA2018">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$/.." accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
